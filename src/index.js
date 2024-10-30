@@ -1,13 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import Layout from './Layout'; // Cambiado de App a Layout
 import reportWebVitals from './reportWebVitals';
+
+import './style/Main.css';
+import './style/Fonts.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Layout /> {/* Cambiado de <App /> a <Layout /> */}
   </React.StrictMode>
 );
 
