@@ -5,6 +5,7 @@ const darkTheme = {
     secondary: '#527EDE',             // Color secundario (puede ser para acentos secundarios)
     textPrimary: '#FFFFFF',           // Color principal del texto
     textSecondary: '#D6FF00',         // Color secundario para texto o detalles
+    textButton: '#0E0E0C',            // Color para boton rellenado
     background: '#121212',            // Color de fondo principal (oscuro)
     backgroundSecondary: '#1E1E1E',   // Color de fondo secundario
   };

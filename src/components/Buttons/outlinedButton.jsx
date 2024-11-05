@@ -1,29 +1,28 @@
 // src/components/Button.js
 import React from 'react';
-import { ThemeContext } from '../context/ThemeContext';
-
+// import { ThemeContext } from '../../context/themeContext';
 
 const OutLineButton = ({ text, onClick }) => {
-    const { theme } = useContext(ThemeContext);
+    // const { theme } = useContext(ThemeContext);
 
     const buttonStyle = {
-        backgroundColor: theme.primary, // Color de fondo similar al de la imagen
-        color: theme.textPrimary, // Color del texto
-        padding: '10px 20px', // Tamaño del botón
+        backgroundColor: 'var(--primary)', // Color de fondo según el diseño de la imagen
+        color: 'var(--textButton)', // Color del texto para que contraste bien con el fondo
+        padding: '10px 20px',
         border: 'none',
-        borderRadius: '8px',
+        borderRadius: '15px',
         fontSize: '16px',
-        fontWeight: 'bold',
+        fontWeight: '500',
         cursor: 'pointer',
         transition: 'background-color 0.3s ease'
     };
 
     const hoverStyle = {
-        backgroundColor: '#b8e600'
+        backgroundColor: '#a3cc00' // Color al pasar el mouse
     };
 
     const activeStyle = {
-        backgroundColor: '#a3cc00'
+        backgroundColor: '#8fb800' // Color al hacer clic
     };
 
     return (
