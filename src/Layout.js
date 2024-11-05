@@ -1,10 +1,13 @@
 // src/Layout.js
 import React from 'react';
+import Home from './views/home';
+import Navbar from './components/Menu/navbar';
 
 const Layout = () => {
     return (
         <div>
-            <h1>Bienvenido a mi aplicación</h1>
+            <Navbar/>
+            <Home/>
         </div>
     );
 };

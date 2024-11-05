@@ -6,10 +6,15 @@ import reportWebVitals from './reportWebVitals';
 import './style/Main.css';
 import './style/Fonts.css';
 
+import { ThemeProvider } from './context/themeContext.jsx';
+
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Layout /> {/* Cambiado de <App /> a <Layout /> */}
+    <ThemeProvider>
+      <Layout />
+    </ThemeProvider>
   </React.StrictMode>
 );
 

@@ -1,0 +1,30 @@
+/* src/components/Navbar.css */
+
+.navbar {
+    background-color: var(--backgroundSecondary); /* Fondo del Navbar */
+    display: flex;
+    justify-content: flex-end; /* Alinea el contenido del navbar a la derecha */
+    align-items: center;
+    padding: 10px 20px;
+    height: 60px;
+  }
+  
+  .navbar-list {
+    list-style: none;
+    display: flex;
+    gap: 100px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-item a {
+    color: var(--textPrimary); /* Color del texto */
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+  
+  .navbar-item a:hover {
+    color: var(--primary); /* Color de hover */
+  }
+  
